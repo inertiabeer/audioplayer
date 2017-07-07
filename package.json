@@ -17,11 +17,19 @@
   "dependencies": {
     "big-integer": "^1.6.17",
     "express": "^4.15.2",
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
   },
   "devDependencies": {
+    "html-webpack-plugin": "^2.29.0",
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^3.2.0",
-    "power-assert": "^1.4.2"
+    "power-assert": "^1.4.2",
+    "webpack": "^3.1.0"
   }
 }

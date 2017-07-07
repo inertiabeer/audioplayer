@@ -12,8 +12,12 @@ const app = express()
 //   res.header("Content-Type", "application/json;charset=utf-8")
 //   next()
 // })
-
+app.get('/',function(req,res){
+	res.sendFile(__dirname+'/dist/index.html');
+})
 app.use(express.static('public'));
+app.use(express.static('dist'));
+
 
 // 获取专辑内容
 app.use('/album', require('./router/album'))

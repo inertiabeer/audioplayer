@@ -10,7 +10,7 @@
     }
 .audio_div{
   width: 300px;
-  min-height:500px;
+  height:550px;
   float: left;
   background-color: #333637;
   border-radius: 10px;
@@ -18,6 +18,7 @@
   text-align: center;
   vertical-align: middle;
   color: #fff;
+  position: relative;
 }
 .audio_div>img
 {
@@ -30,7 +31,10 @@
 }
 .audio_div audio
 {
-  margin: 40px 0px;
+  display: block;
+  position: absolute;
+  bottom: -10px;
+
 
 }
 h2
@@ -40,17 +44,7 @@ h2
     </style>
   </head>
   <body>
-<!--   <div class="audio_div">
-  <h2>  网络音乐播放器</h2>
-    <img src="http://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg" alt="">
-    <h4>歌名</h4>
-    <h4>作者</h4>
-    <h4>专辑名</h4>
-    <audio id="audio" src="" controls="controls">
-     Your browser does not support the audio element.
-     autoplay, controls loop preload src
-  </audio>
-  </div> -->
+
 <div id="target"></div>
  <script>
  // data.songs[0].id,data.songs[0].name,data.songs[0].name,data.songs[0].artists.name,data.songs[0].artists[0].PicUrl
@@ -80,5 +74,5 @@ h2
   // })
   // .catch(e=>console.log(e));
  </script>
-  </body>
+  <script type="text/javascript" src="js/bundle.js"></script></body>
 </html>
