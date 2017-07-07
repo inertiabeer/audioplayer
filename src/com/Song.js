@@ -10,11 +10,27 @@ class Song extends Component{
 
 	}
 	componentWillMount() {
-		let that=this;
+	let that=this;
 	fetch('/music/url?id='+this.props.info.id).then(res=>res.json()).then(function(res){
 		that.setState({url:res.data[0].url})
 
         });
+	}
+	componentDidUpdate(prevProps, prevState) {
+
+		if(this.props.info.name==prevProps.info.name)
+		{
+
+		}//这里进行判断是否更新了url
+		else
+		{	
+			let that=this;
+	     fetch('/music/url?id='+this.props.info.id).then(res=>res.json()).then(function(res){
+		that.setState({url:res.data[0].url})
+
+        });
+
+		}
 	}
 
 	render()

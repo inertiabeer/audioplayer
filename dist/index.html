@@ -10,8 +10,8 @@
     }
 .audio_div{
   width: 300px;
-  height:550px;
-  float: left;
+  min-height:500px;
+  display: inline-block;
   background-color: #333637;
   border-radius: 10px;
   margin:40px 30px;
@@ -19,22 +19,24 @@
   vertical-align: middle;
   color: #fff;
   position: relative;
+  padding: 10px 0;
 }
 .audio_div>img
 {
   display: block;
   border-radius: 10px;
   width: 260px;
+  max-height: 260px;
   margin:0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .audio_div audio
 {
-  display: block;
+  display: inline-block;
   position: absolute;
-  bottom: -10px;
-
+  bottom: 10px;
+  left: 0px;
 
 }
 h2
@@ -44,35 +46,9 @@ h2
     </style>
   </head>
   <body>
-
 <div id="target"></div>
  <script>
- // data.songs[0].id,data.songs[0].name,data.songs[0].name,data.songs[0].artists.name,data.songs[0].artists[0].PicUrl
-  // fetch('/search?keywords=海阔天空').then(res=>res.json())
-  // .then(function(data){
 
-  //   let audio_div=document.getElementsByClassName('audio_div')[0];
-  //   let h4_arr=document.getElementsByClassName('audio_div')[0].getElementsByTagName('h4');
-  //   let img=audio_div.getElementsByTagName('img')[0];
-  //   h4_arr[0].innerHTML=data.result.songs[0].name;
-  //   console.log(data.result.songs[0].artists[0]);
-  //   h4_arr[1].innerText=data.result.songs[0].artists[0].name;
-  //   img.setAttribute('src',data.result.songs[0].artists[0].picUrl)
-
-  //   return data.result.songs[0].id;
-  // })
-  // .then(function(id){
-  //   fetch('/music/url?id='+id).then(res=>res.json())
-  //   .then(function(res){
-  //     console.log(res.data[0].url);
-  //     document.getElementById('audio').setAttribute('src',res.data[0].url);
-      
-
-
-  //   })
-
-  // })
-  // .catch(e=>console.log(e));
  </script>
   <script type="text/javascript" src="js/bundle.js"></script></body>
 </html>
